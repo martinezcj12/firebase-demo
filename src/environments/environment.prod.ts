@@ -1,3 +1,14 @@
-export const environment = {
-  production: true
-};
+
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAgQOaNUCSRxqW1I3xttTZBmUqql7lvRO0",
+    authDomain: "is445-demo-1127-f4b63.firebaseapp.com",
+    databaseURL: "https://is445-demo-1127-f4b63.firebaseio.com",
+    projectId: "is445-demo-1127-f4b63",
+    storageBucket: "is445-demo-1127-f4b63.appspot.com",
+    messagingSenderId: "528097499269"
+  };
+  firebase.initializeApp(config);
+</script>

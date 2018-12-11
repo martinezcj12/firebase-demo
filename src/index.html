@@ -7,8 +7,25 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
   <app-root></app-root>
 </body>
 </html>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAgQOaNUCSRxqW1I3xttTZBmUqql7lvRO0",
+    authDomain: "is445-demo-1127-f4b63.firebaseapp.com",
+    databaseURL: "https://is445-demo-1127-f4b63.firebaseio.com",
+    projectId: "is445-demo-1127-f4b63",
+    storageBucket: "is445-demo-1127-f4b63.appspot.com",
+    messagingSenderId: "528097499269"
+  };
+  firebase.initializeApp(config);
+</script>
