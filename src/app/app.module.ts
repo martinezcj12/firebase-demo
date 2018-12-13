@@ -6,10 +6,10 @@ import { AppComponent } from './app.component'
 
 import { AngularFireModule } from '@angular/fire'
 import { AngularFirestoreModule } from '@angular/fire/firestore'
-import { environment } from '../environments/environment';
-import { BoardsComponent } from './boards/boards.component';
-import { BoardsDetailComponent } from './boards-detail/boards-detail.component';
-import { BoardsCreateComponent } from './boards-create/boards-create.component';
+import { environment } from '../environments/environment'
+import { BoardsComponent } from './boards/boards.component'
+import { BoardsDetailComponent } from './boards-detail/boards-detail.component'
+import { BoardsCreateComponent } from './boards-create/boards-create.component'
 import { BoardsEditComponent } from './boards-edit/boards-edit.component'
 
 const appRoutes: Routes = [
