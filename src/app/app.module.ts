@@ -12,6 +12,18 @@ import { BoardsDetailComponent } from './boards-detail/boards-detail.component'
 import { BoardsCreateComponent } from './boards-create/boards-create.component'
 import { BoardsEditComponent } from './boards-edit/boards-edit.component'
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+
+import {
+  MatInputModule,
+  MatTableModule,
+  MatIconModule,
+  MatButtonModule,
+  MatCardModule,
+} from '@angular/material'
+
+import { ReactiveFormsModule } from '@angular/forms'
+
 const appRoutes: Routes = [
   {
     path: 'boards',
@@ -49,6 +61,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     MatInputModule,
     MatTableModule,
@@ -57,21 +70,6 @@ const appRoutes: Routes = [
     MatCardModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
-// Angular Material needs this
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-
-import {
-  MatInputModule,
-  MatTableModule,
-  MatIconModule,
-  MatButtonModule,
-  MatCardModule,
-} from '@angular/material'
-
-import { ReactiveFormsModule } from '@angular/forms'
-
-
+export class AppModule {}
