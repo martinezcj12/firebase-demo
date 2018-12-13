@@ -37,13 +37,24 @@ const appRoutes: Routes = [
 ]
 
 @NgModule({
-  declarations: [AppComponent, BoardsComponent, BoardsDetailComponent, BoardsCreateComponent, BoardsEditComponent],
+  declarations: [
+    AppComponent,
+    BoardsComponent,
+    BoardsDetailComponent,
+    BoardsCreateComponent,
+    BoardsEditComponent,
+  ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     BrowserAnimationsModule,
+    MatInputModule,
+    MatTableModule,
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
